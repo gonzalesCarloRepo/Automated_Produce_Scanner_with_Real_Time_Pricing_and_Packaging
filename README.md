@@ -32,3 +32,31 @@ receipt, and package the produce automatically.
 - Assorted-vegetable detection
 - Administrator price management
 - Offline machine-learning inference
+
+#System Workflow
+                Raspberry Pi Camera
+                        │
+                        ▼
+                 Image Processing
+                        │
+                        ▼
+              Edge Impulse FOMO Model
+                        │
+                        ▼
+               Produce Classification
+                        │
+                        ▼
+              ┌──────────────────┐
+              │ Price Database   │
+              └────────┬─────────┘
+                       │
+                       │
+Load Cell ──> HX711 ───┤
+                       │
+                       ▼
+                Price Calculation
+                       │
+             ┌─────────┼─────────┐
+             ▼         ▼         ▼
+            LCD     Barcode    Sealing
+                   Printer     Mechanism
