@@ -1,0 +1,11 @@
+{
+  "ref_unit_int": -258,
+  "offset": 509167,
+  "unit": "g",
+  "saved_at": "2026-04-13 00:05:53",
+  "pins": {
+    "dt_gpio": 6,
+    "sck_gpio": 5
+  },
+  "formula": "grams = (raw - offset) / ref_unit_int"
+}
